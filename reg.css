@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #e8817f, #c3727c,#8d5273,#5a336e,#311f62);
+}
+form{
+    background: #1d121ba3;
+    width: 350px;
+    height: 450px;
+    padding: 75px 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(165%,25%);
+}
+h1{
+    text-align: center;
+    margin-bottom: 45px;
+    color:white;
+}
+.textBox{
+    border-bottom: 2px solid white;
+    position: relative;
+    margin: 35px 0;
+}
+.textBox input{
+    background: none;
+    border: none;
+}
+.regBtn{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right top, #e8817f, #c3727c,#8d5273,#5a336e,#311f62);
+    background-size: 200%;
+    color: white;
+    font-size: 15px;
+}
+.regBtn:hover{
+    background-position:right;
+    font-size: 17px;
+}

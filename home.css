@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.container {
+    width: 80%;
+    max-width: 650px;
+    padding: 20px;
+    background: #1d121ba3; /* Light transparent background */
+    /*border-radius: 10px;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+/*.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}*/
+
+h1{
+    text-align: center;
+    margin-bottom: 45px;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+.btn{
+    height: 45px;
+    width: 100%;
+    margin: 35px 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    background-size: 200%;
+    color: white;
+    font-size: 15px;
+    box-shadow: none;
+    appearance: none;
+    background-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/*.orbitron-fonte {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  }*/
+.btn:hover{
+    background-position:right;
+    font-size: 17px;
+}
