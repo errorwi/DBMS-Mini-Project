@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Test</title>
+</head>
+<body>
+    <h1>Profile Endpoint Test</h1>
+    <div>
+        <label for="test-username">Username to test:</label>
+        <input type="text" id="test-username" value="testuser">
+        <button onclick="testProfileEndpoint()">Test Profile Endpoint</button>
+    </div>
+    <div>
+        <h2>Results:</h2>
+        <pre id="result">No test run yet</pre>
+    </div>
+
+    <script>
+        async function testProfileEndpoint() {
+            const username = document.getElementById('test-username').value;
+            const resultElem = document.getElementById('result');
+            
+            resultElem.textContent = `Testing profile endpoint for username: ${username}...`;
+            
+            try {
+                const response = await fetch(`http://localhost:5000/profile?username=${username}`);
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    resultElem.textContent = `Error ${response.status}: ${errorText}`;
+                    return;
+                }
+                
+                const data = await response.json();
+                resultElem.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                resultElem.textContent = `Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

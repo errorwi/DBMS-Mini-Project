@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Game Lobby</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    *{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: #1d121ba3;
+    color: white;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+  }
+  .textBox{
+    border-bottom: 2px solid white;
+    position: relative;
+    margin: 35px 0;
+  }
+  input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    /* border-radius: 6px; */
+    /* border: 1px solid #ccc; */
+  }
+  button {
+    background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    font-size: 17px;
+  }
+  #membersList {
+    text-align: left;
+    margin-top: 15px;
+    background-color: #1d121ba3;
+    padding: 10px;
+    /* border-radius: 6px; */
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+  li {
+    margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Game Lobby</h2>
+    <div class="textBox"><input type="text" id="playerName" placeholder="Enter your name"></div>
+    <button id="createLobbyBtn">Create Lobby</button>
+    <p id="lobbyResult"></p>
+
+    <div id="membersSection" style="display:none;">
+      <h4>Lobby Members:</h4>
+      <ul id="membersList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="edPro.css">
+  <style>
+    .avatar-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .avatar-option {
+      width: 80px;
+      height: 80px;
+      border: 3px solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+    
+    .avatar-option:hover {
+      border-color: #ccc;
+    }
+    
+    .avatar-option.selected {
+      border-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Edit Profile</h2>
+
+    <form id="profileForm">
+      <!-- Avatar Selection -->
+      <label>Choose Avatar:</label>
+      <div class="avatar-options" id="avatarOptions">
+        <img src="Avatars/Avatar1.png" class="avatar-option" data-avatar="Avatars/Avatar1.png" alt="Avatar 1">
+        <img src="Avatars/Avatar2.png" class="avatar-option" data-avatar="Avatars/Avatar2.png" alt="Avatar 2">
+        <img src="Avatars/Avatar3.png" class="avatar-option" data-avatar="Avatars/Avatar3.png" alt="Avatar 3">
+        <img src="Avatars/Avatar4.png" class="avatar-option" data-avatar="Avatars/Avatar4.png" alt="Avatar 4">
+        <img src="Avatars/Avatar5.png" class="avatar-option" data-avatar="Avatars/Avatar5.png" alt="Avatar 5">
+        <!-- <img src="Avatars/Avatar6.png" class="avatar-option" data-avatar="Avatars/Avatar6.png" alt="Avatar 6"> -->
+      </div>
+      <input type="hidden" id="selectedAvatar" name="selectedAvatar" value="Avatars/Avatar1.png">
+      
+      <!-- Username -->
+      <label>Username:</label>
+      <div class="textBox"><input type="text" name="username" placeholder="username" id="username" required /></div>
+
+      <!-- Password -->
+      <label>New Password:</label>
+      <div class="textBox"><input type="password" id="password" name="password" placeholder="password" required /></div>
+
+      <button type="submit">Save Changes</button>
+    </form>
+    
+    <p id="message"></p>
+  </div>
+
+  <script src="editPro.js"></script>
+</body>
+</html>

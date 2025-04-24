@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Game Lobby</title>
+  <style>
+    *{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #1d121ba3;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+    }
+    input, button {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: linear-gradient(to right top, #b35b59, #954e58,#6d3b58,#6d3b58,#6d3b58);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Join Game Lobby</h2>
+    <input type="text" id="playerName" placeholder="Enter your name">
+    <input type="text" id="lobbyCode" placeholder="Enter lobby code">
+    <button id="joinLobbyBtn">Join Lobby</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

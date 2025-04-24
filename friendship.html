@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friendship Page</title>
+  <link rel="stylesheet" href="friendship.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="card">
+      <img src="Avatars/Avatar1.png" class="avatar" alt="Avatar" />
+      <h2>UserName</h2>
+      <p>FriendshipID</p>
+      <P>Created_At</P>
+      <p class="status">Accepted</p>
+
+      <div class="btn-group">
+        <div class="btn-div">
+            <button class="btn">Message</button>
+        <button class="btn">Invite</button>
+        <button class="btn">Gift</button>
+        </div>
+      </div>
+    </div>
+    <div id="chat-box" class="chat hidden">
+      <div class="chat-header">
+        <span>Chat with UserName</span>
+        <button id="close-chat" class="close-btn">X</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+    
+    </div>
+  <script src="friendship.js"></script>
+</body>
+</html>
